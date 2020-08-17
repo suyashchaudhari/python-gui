@@ -3,6 +3,7 @@ import tkinter.messagebox as tmsg
 root=Tk()
 root.geometry("425x970")
 root.title("Calculator")
+#logic
 def click(event):
     global scvalue
     text=event.widget.cget("text")
@@ -29,8 +30,10 @@ def click(event):
         screen.update()
 scvalue =StringVar()
 scvalue.set("")
+#entry
 screen=Entry(root,textvariable=scvalue,font="lucida 40 bold")
 screen.pack(fill=X,padx=10,pady=10,ipadx=8)
+#creating frame
 f = Frame(root,bg="grey")
 b=Button(f,text="9",padx=28,pady=15,font="lucida 25 bold")
 b.pack(side=LEFT,padx=18,pady=5)
